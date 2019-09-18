@@ -1,0 +1,22 @@
+server:
+  port: 8181
+
+
+spring:
+  application:
+    name: db-redis-save
+  redis:
+    host: 101.132.168.240
+    port: 6666
+    password:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://101.132.168.240:3306/byit-hmily?serverTimezone=GMT&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+    username: root
+    password: HUANGfu0110..
+    type: com.alibaba.druid.pool.DruidDataSource
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka
